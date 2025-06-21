@@ -4,3 +4,5 @@ rm -rf *.aux
 rm -rf *.dvi
 rm -rf *.log
 rm -rf *.synctex.gz
+rm -rf *.out
+rm -rf *.toc
