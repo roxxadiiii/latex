@@ -1,0 +1,110 @@
+\documentclass[11pt]{article}              % Sets the document class as 'article' with font size 11pt
+\usepackage{enumerate}                     % Provides extended options for enumerate environment
+\pagestyle{empty}
+
+\begin{document}
+	
+	Number List :
+	\begin{enumerate}		                % Numbered list using enumerate environment
+		\item pencil
+		\item calculator
+		\item ruler
+		\item notebook
+	\end{enumerate}
+	
+	\vspace{1cm}
+	Bulletts list:
+	\begin{itemize}		                % Unordered list (bullets) using itemize
+		\item pencil
+		\item calculator
+		\item ruler
+		\item notebook
+	\end{itemize}
+	
+	\vspace{1cm}
+	Nested List :
+	\begin{enumerate}		                % Nested numbered list
+		\item pencil
+		\item calculator
+		\item ruler
+		\item notebook
+		\begin{enumerate}		            % Second-level nested enumerate
+			\item notes
+			\item homework
+			\item assesment
+			\begin{enumerate}        % Third-level nested enumerate
+				\item tests
+				\item quizes
+				\item journal enteries
+			\end{enumerate}
+		\end{enumerate}
+		\item highlighters
+	\end{enumerate}
+	
+	\vspace{1cm}
+	Changing Default Enamurate to A , B , C ....
+	\begin{enumerate}[A.]		            % Changes numbering format to A., B., C. using enumerate package
+		\item pencil
+		\item calculator
+		\item ruler
+		\item notebook
+	\end{enumerate}
+	
+	\vspace{1cm}
+	Changing Default Enamurate to i , ii , iii ....
+	\begin{enumerate}[i.]		            % Changes numbering format to i., ii., iii.
+		\item pencil
+		\item calculator
+		\item ruler
+		\item notebook
+	\end{enumerate}
+	
+	Now lets assume you have to start a list with a certain Point what would you do??
+	
+	\begin{enumerate} \setcounter{enumi}{5}  % Starts enumeration from item 6 (counter begins at 5)
+		\item pencil
+		\item calculator
+		\item ruler
+		\item notebook
+	\end{enumerate}
+	
+	\pagebreak
+	
+	\begin{itemize}		                % Nested bullet list using itemize
+		\item pencil
+		\item calculator
+		\item ruler
+		\item notebook
+		\begin{itemize}		            % Second-level itemize
+			\item notes
+			\item homework
+			\item assesment
+			\begin{itemize}	        % Third-level itemize
+				\item tests
+				\item quizes
+				\item journal enteries
+			\end{itemize}
+		\end{itemize}
+		\item highlighters
+	\end{itemize}
+	
+	\vspace{4cm}
+	
+	list without number or bullets
+	\begin{enumerate}		                % To create a list without labels, use \item[]
+		\item[] pencil
+		\item[] calculator
+		\item[] ruler
+		\item[] notebook
+	\end{enumerate}
+	
+	\vspace{4cm}
+	Customized level :
+	\begin{enumerate}		                % Custom labels for items using \item[label]
+		\item[one] pencil
+		\item[two] calculator
+		\item[three] ruler
+		\item[four] notebook
+	\end{enumerate}
+	
+\end{document}
