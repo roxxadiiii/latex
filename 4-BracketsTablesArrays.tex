@@ -1,0 +1,109 @@
+\documentclass[18pt]{article}    % Document class with font size 18pt
+\usepackage{amsfonts,amssymb,amsmath,float}   % Math and font packages, and float to force table positions
+
+%close indent
+\parindent 0px                  % No indentation at the beginning of paragraphs
+\pagestyle{empty}              % No page number or header/footer
+
+\begin{document}
+
+Small Bracket :
+
+The Distributive Property states that $a(b+c)=ab+ac$,for all $a,b,c \in \mathbb{R}$    % Inline math using ()
+
+Square Bracket :
+
+the equivalence class of $a$ is $[a]$.       % Inline math using []
+
+Curly Brackets :
+
+The set $A$ is defined to be $\{1,2,3\}$.    % Inline math using {}
+
+Dollar sign :
+
+The movie ticket cost $\$11.50$.            % Escaping $ with \ to print dollar sign
+
+Use Case of left and right
+
+in small bracket
+$$  2\left(\frac{1}{x^2-1}\right)  $$     % Using \left( and \right) to auto-scale parentheses
+
+in curly bracket
+$$  2\left\{\frac{1}{x^2-1}\right\}  $$   % Using \left\{ and \right\} for curly braces
+
+in square bracket
+$$ 2\left [\frac{1}{x^2-1}\right]  $$     % Using \left[ and \right] for square brackets
+
+in <> bracket 
+$$  2\left<\frac{1}{x^2-1}\right>  $$     % Angle brackets (not recommended, use langle/rangle instead)
+
+or using rangle and langle
+
+$$  2\left \langle \frac{1}{x^2-1} \right \rangle    $$   % Correct way to use angle brackets
+
+$$  \left. \frac{dy}{dx} \right |_{x=1}  $$   % Use of \left. and \right| to format evaluation at x=1
+
+complex fraction
+
+$$ \left (\frac{1}{1 + \left(\frac{1}{1+x}\right)}\right)  $$   % Nested fractions with scaling parentheses
+
+table : 
+
+\begin{tabular}{|c||c|c|c|c|c|}    % Table with vertical lines, double line between first and others
+% c , l , r can be used with pipe to distuinguish between
+% use || to distuinguish the first coloum with other
+\hline
+$x$ & 1 & 2 & 3 & 4 & 5 \\ \hline
+$f(x)$ & 10 & 11 & 12 & 13 & 14 \\ \hline
+\end{tabular}
+
+\vspace{1cm}      % Adds vertical space between elements
+
+\begin{table}[H]       % Float positioning to force table exactly here
+\centering
+\def\arraystretch{1.8}   % Increase row height
+\begin{tabular}{|c||c|c|c|c|c|}    
+% c , l , r can be used with pipe to distuinguish between
+% use || to distuinguish the first coloum with other
+\hline
+$x$ & 1 & 2 & 3 & 4 & 5 \\ \hline
+$f(x)$ & $\frac{1}{2}$ & 11 & 12 & 13 & 14 \\ \hline
+\end{tabular}
+\caption{These values represent the function of x}  % Caption for table
+\end{table}
+
+\begin{table}[H]
+\centering
+\def\arraystretch{1.8}
+\begin{tabular}{|l|p{2in}|}    % First column left aligned, second column has fixed width (paragraph type)
+% c , l , r can be used with pipe to distuinguish between
+% use || to distuinguish the first coloum with other
+\hline
+$f(x)$ & $f'(x)$ \\ \hline
+$x > 0$ & The function $f(x)$ is increasing. \\ \hline
+\end{tabular}
+\caption{the relationship between the $f$ and $f'$}
+\end{table}
+
+Arrays : 
+
+\begin{align}				% Align environment for equations with numbering
+5x^2    \text{place your words here}   \\      % Text inside equation using \text{}
+5x^2-9 = x+3 \\
+5x^2-x-12 = 0
+\end{align}
+
+\begin{align}				
+5x^2    \text{place your words here}   \\
+5x^2-9 &= x+3 \\				% use & before = sign to align equations to =
+5x^2-x-12 &= 0
+\end{align}
+
+% if you dont want numbered equation then use align*
+\begin{align*}				% Align* suppresses equation numbers
+5x^2    \text{place your words here}   \\
+5x^2-9 &= x+3 \\				
+5x^2-x-12 &= 0
+\end{align*}
+
+\end{document}

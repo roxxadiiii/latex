@@ -1,58 +1,64 @@
-\documentclass[18]{article}
-\pagestyle{empty}
-\usepackage{amsmath,amssymb,amsfonts}
+\documentclass[18]{article}              % Document class with font size option (though 18 is not standard)
+\pagestyle{empty}                        % No page numbering or headers/footers
+\usepackage{amsmath,amssymb,amsfonts}    % Useful math and symbol packages
+
 \begin{document}
+
 % superscripts
-superscripts $${2x^3}$$
+superscripts $${2x^3}$$                  % Superscript: x raised to the power 3
+
 % use curly bracket to use double or more digit in superset
-$${2x^{34}}$$
-$${2x^{3x+4}}$$
-$${2^{3x^4+5}}$$
+$${2x^{34}}$$                            % Use curly braces to group entire exponent
+$${2x^{3x+4}}$$                          % Exponent with expression
+$${2^{3x^4+5}}$$                         % Superscript nested with another superscript
 
 Subscript
-$$x_1$$
-% use curly bracket for more thean 2 or two subscript
-$${x_{123}}$$
-$${x_{1_2}}$$
-$${x_{1_{2_3}}}$$
+$$x_1$$                                  % Subscript: x with subscript 1
+
+% use curly bracket for more than 2 or two subscript
+$${x_{123}}$$                            % Subscript with multiple digits using braces
+$${x_{1_2}}$$                            % Nested subscript: 1 subscripted by 2
+$${x_{1_{2_3}}}$$                        % Deeply nested subscripts
 
 lower dots
-$${a_0,a_1,a_3,\ldots,a_{100}}$$
+$${a_0,a_1,a_3,\ldots,a_{100}}$$        % \ldots: ellipsis aligned with baseline (used in subscripts or lists)
 
 centre dots
-$${a_0,a_1,a_3,\cdots,a_{100}}$$
+$${a_0,a_1,a_3,\cdots,a_{100}}$$        % \cdots: ellipsis centered vertically (used in products/sequences)
 
 Greek Letters
-$$\alpha$$
-$$A=\pi r^2$$
+$$\alpha$$                              % Lowercase Greek letter alpha
+$$A=\pi r^2$$                           % Area of circle using Greek letter pi
 
 Trig Functions
-$$y=\sin x$$
-$$y=\cos x$$
-$$y=\csc \theta$$
-$$y=\sin^{-1}x $$
-$$y=\arcsin x$$
+$$y=\sin x$$                            % Sine function
+$$y=\cos x$$                            % Cosine function
+$$y=\csc \theta$$                       % Cosecant function with theta
+$$y=\sin^{-1}x $$                       % Inverse sine (notation)
+$$y=\arcsin x$$                         % Alternative notation for inverse sine
 
 Log Function
-$$y=\log x$$
-$$y=\log_{10} x$$
-$$y=\ln x$$
+$$y=\log x$$                            % Common logarithm
+$$y=\log_{10} x$$                       % Logarithm with base 10
+$$y=\ln x$$                             % Natural logarithm
 
 Roots
-$$\sqrt{2}$$
-$$\sqrt[3]{9}$$
-$$\sqrt{x^2+y^2}$$
-$$\sqrt{ 1+\sqrt{x}  }$$
+$$\sqrt{2}$$                            % Square root of 2
+$$\sqrt[3]{9}$$                         % Cube root of 9
+$$\sqrt{x^2+y^2}$$                      % Root of expression
+$$\sqrt{ 1+\sqrt{x}  }$$                % Nested square roots
 
 Fractions
-$$\frac{3}{5}$$
-Without Displaystyle :About $\frac{2}{3}$ of the Glass is full.\\[11pt]
+$$\frac{3}{5}$$                         % Basic fraction
 
-With Displaystyle :About $\displaystyle \frac{2}{3}$ of the Glass is full
+Without Displaystyle :About $\frac{2}{3}$ of the Glass is full.\\[11pt]     % Inline math (small fraction size)
 
-With dfrac : About $\dfrac{2}{3}$ of the Glass is full[11pt]
+With Displaystyle :About $\displaystyle \frac{2}{3}$ of the Glass is full   % Forces large fraction in inline
 
-$$\frac{\sqrt{x+1}}{\sqrt{x+2}}$$
+With dfrac : About $\dfrac{2}{3}$ of the Glass is full[11pt]                % \dfrac from amsmath (forces large display style)
 
-$$\frac{1}{1+\frac{1}{\frac{1}{x}}}$$
+$$\frac{\sqrt{x+1}}{\sqrt{x+2}}$$       % Fraction with square roots
+
+$$\frac{1}{1+\frac{1}{\frac{1}{x}}}$$   % Complex nested fractions
+
 \end{document}

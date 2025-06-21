@@ -1,18 +1,20 @@
-\documentclass[14pt]{article}
+\documentclass[14pt]{article}             % Sets document class with font size 14pt (not standard; may default to 10pt)
 
 \begin{document}
+
 % Soft return
-This is the first sentence with a soft return.\\
+This is the first sentence with a soft return.\\   % \\ forces a line break within the same paragraph
 This is the second sentence after a hard return.
 % Hard return
 
-This is a new paragraph because of a blank line (hard return).
+This is a new paragraph because of a blank line (hard return).   % A blank line creates a new paragraph
 
 % displaying math mode with $[Math eqn]$
-This is the famous equation: $E = mc^2$. 
-% another example named rectangle
+This is the famous equation: $E = mc^2$.           % Inline math using single dollar signs
 
-A rectangle has side lengths of $(x+1)$ and $(x+3)$.The equation for ${A(x)=x^2+4x+3}$ gives the area of the rectangle.
+% another example named rectangle
+A rectangle has side lengths of $(x+1)$ and $(x+3)$.The equation for ${A(x)=x^2+4x+3}$ gives the area of the rectangle.  
+% Parentheses used for values, curly braces for clarity in math
 
 %using \[]\
 written in display math
@@ -20,6 +22,7 @@ written in display math
 \[
 a^2 + b^2 = c^2
 \]
+% \[ \] is used for unnumbered display-style math
 
 and
 % using \begin{equation}
@@ -27,11 +30,14 @@ and
 \begin{equation}
 e=mc^2
 \end{equation}
+% equation environment for numbered display math
 
 and 
 
 $$
 {n(n+1)}{2}
 $$
+% $$ $$ is another way to write display math (unnumbered)
+% curly braces here just group expressions, though unnecessary
 
 \end{document}
