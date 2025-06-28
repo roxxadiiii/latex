@@ -1,0 +1,59 @@
+\documentclass[11pt,legalpaper]{article}  % Sets the document class to 'article' with 11pt font size on legal-sized paper
+
+% preamble
+
+% \usepackage{fullpage}                    % (Commented) Would set 1-inch margins all around
+% \usepackage[top=1in,bottom=1in,left=0.5in,left=0.5in,paperwidth=5in,paperheight=8in]{geometry}  
+% (Commented) Custom page dimensions with repeated 'left' option, which would cause an error
+
+\usepackage[margin=1in]{geometry}          % Sets all margins to 1 inch
+\usepackage{amsfonts}                      % Provides additional math fonts (like \mathbb)
+\usepackage{amssymb}                       % Provides additional math symbols
+\usepackage{amsmath}                       % Provides advanced math environments like align, split, etc.
+\usepackage{tikz,pgfplots}                % Packages used for drawing vector graphics and plots
+\usepackage{graphicx}                      % Enables inclusion of external images
+\usepackage{enumitem}                      % Allows customization of list environments (spacing, labels, etc.)
+\usepackage{float}                         % Provides the [H] float placement specifier to force exact image placement
+
+% setting up a macro
+\def\eqOne{y=\dfrac{x}{3x^2+x+1}}           % Defines a macro \eqOne for a math expression
+
+\newcommand{\set}[1]{\setlength\itemsep{#1em}}  % Defines a custom command \set to change list item spacing
+
+\begin{document}
+	
+	\textbf{Critical Thinking Questions}      % Bold title text
+	
+	\begin{enumerate}                         % Begins a numbered list
+		
+		\set{1.2}                             % Sets spacing between list items to 1.2em
+		
+		\begin{figure}[H]                    % Begins a figure environment with 'Here' positioning
+			\includegraphics[scale=0.6]{7-pokemon.png}   % Includes an image scaled to 60%
+			\caption this a mascoot of pokemon.          % (Incorrect syntax) Intended to add a caption
+		\end{figure}
+		
+		\item Let's examine the function $y = \eqOne$      % Inline math using macro \eqOne
+		
+		\item this is the symbol for all real numbers : $ \mathbb{R}$.  % Real number symbol
+		
+		\item this is the symbol for the set of rationals : $\mathbb{Z}$. % Incorrect comment: \mathbb{Z} is for integers
+		
+		\item this is the symbol for thee set of rationals : $\mathbb{Q}$. % Rational number symbol
+		
+		\item Is it possible for a sequence to converge to two different numbers ? If So , give an example. if not, explain why not.
+		
+		\item Explain how to use partial sums to determine if a series converges or diverges . Give an examples.
+		
+		\item Explain why $\int\limits_{1}^{\infty}f(x)\,dx$ and $\sum\limits_{n=1}^{\infty} a_n $ need not converge to the same value , even if they are both convergent.   % Comparison of improper integral vs infinite series
+		
+		\item In your own words ,explain the Alternating Series Remainder theoram . How is this theoram useful?  % Spelling mistake in "theoram"
+		
+		\item Explain the difference between absolute and conditional convergence . Give an Example of each .
+		
+		\item The ratio Test is inconclusive if $  {\lim \limits_{n \to \infty}}\left|{\frac{a_{n+1}}{a_n}} \right | = 1  $ . Give an example of one convergent series and one divergent series for which $    {\lim \limits_{n \to \infty}} \left | {\frac{a_n + 1 }{a_n}} \right | = 1  $ Explain how you determined your examples .
+		% Second limit expression is incorrect — should be a_{n+1}, not a_n + 1
+		
+	\end{enumerate}
+	
+\end{document}

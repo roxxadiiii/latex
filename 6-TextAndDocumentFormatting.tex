@@ -1,28 +1,36 @@
-\documentclass[15pt]{article}
-\usepackage{hyperref}
-\pagestyle{empty}
-\title{My \LaTeX\  Document}
-\author{roxxadiiii}
-\date{\today}
+\documentclass[15pt]{article}                  % Sets the document class to 'article' with font size 15pt (non-standard)
+
+\usepackage{hyperref}                          % Enables hyperlinks using \href and creates clickable TOC
+
+\pagestyle{empty}                              % Removes page numbering and headers/footers
+
+\title{My \LaTeX\  Document}                   % Sets document title with LaTeX logo
+\author{roxxadiiii}                            % Author name
+\date{\today}                                  % Sets date to current date
 
 \begin{document}
-	\tableofcontents
-	\maketitle
-	this will produce \textit{itiaclized} text.
 	
-	This will produce \textbf{Bold Face} text.
+	\tableofcontents                            % Generates the table of contents from \section, \subsection, etc.
 	
-	this will produce \textsc{small caps} text.
+	\maketitle                                  % Prints the title, author, and date
 	
-	This will produce \texttt{typewritter font} text.
+	this will produce \textit{itiaclized} text.             % Italic text
 	
-	\vspace{2cm}
+	This will produce \textbf{Bold Face} text.              % Bold text
+	
+	this will produce \textsc{small caps} text.             % Small caps text
+	
+	This will produce \texttt{typewritter font} text.       % Monospaced (typewriter) font
+	
+	\vspace{2cm}                                % Adds vertical space of 2 cm
 	
 	please visit Roxxadiiii github at \href{https://github.com/roxxadiiii/latex}{roxxaiiii's github}
+	% Creates a clickable hyperlink with custom text
 	
 	\vspace{2cm}
 	
-	Please excuse my  \begin{large}
+	% Demonstrating different text sizes
+	Please excuse my \begin{large}
 		dear aunt sally
 	\end{large}.
 	
@@ -56,6 +64,7 @@
 	
 	\vspace{2cm}
 	
+	% Text alignment environments
 	\begin{center}
 		This is centred.
 	\end{center}
@@ -70,15 +79,17 @@
 	
 	\vspace{3cm}
 	
-	\section{linear Function}
-		\subsection{Slope-intercept Form}
-			\subsubsection{Example 1:}
-			\subsubsection{Example 2:}
-		\subsection{Standard Form}
-		\subsection{point-slope form}
+	% Table of Contents entries created by sections and subsections
+	\section{linear Function}                      % Section added to TOC
+	\subsection{Slope-intercept Form}         % Subsection under 'linear Function'
+	\subsubsection{Example 1:}            % Subsubsection under 'Slope-intercept Form'
+	\subsubsection{Example 2:}
+	\subsection{Standard Form}
+	\subsection{point-slope form}
+	
 	\section{Quadratic Function}
-		\subsection{Vertex Form}
-		\subsection{Standard Form}
-		\subsection{Factored Form}
+	\subsection{Vertex Form}
+	\subsection{Standard Form}
+	\subsection{Factored Form}
 	
 \end{document}
