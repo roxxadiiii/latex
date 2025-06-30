@@ -6,3 +6,10 @@ rm -rf *.log
 rm -rf *.synctex.gz
 rm -rf *.out
 rm -rf *.toc
+
+rm -rf personal-exercise/*.aux
+rm -rf personal-exercise/*.dvi
+rm -rf personal-exercise/*.log
+rm -rf personal-exercise/*.synctex.gz
+rm -rf personal-exercise/*.out
+rm -rf personal-exercise/*.toc
